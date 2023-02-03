@@ -5,7 +5,6 @@ import {MessageType} from "../HW1";
 export type MessagePropsType = {
     message: MessageType
 }
-
 // создать тип вместо any и отобразить приходящие данные
 const FriendMessage = (props: MessagePropsType) => {
     return (
