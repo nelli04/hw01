@@ -4,23 +4,27 @@ import {AffairType, FilterType} from '../HW2'
 import s from './Affairs.module.css'
 
 type AffairsPropsType = {
-    data: any // need to fix any
-    setFilter: any
-    deleteAffairCallback: any
+    data: Array<AffairType> // need to fix any
+    setFilter: (filter: FilterType) => void
+    deleteAffairCallback: (id: number) => void
     filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
-    const setAll = () => {
+    const setAll = (filter: 'all') => {
+        props.setFilter(filter)
         // need to fix
     }
-    const setHigh = () => {
+    const setHigh = (filter: 'high') => {
+        props.setFilter(filter)
         // need to fix
     }
-    const setMiddle = () => {
+    const setMiddle = (filter: 'middle') => {
+        props.setFilter(filter)
         // need to fix
     }
-    const setLow = () => {
+    const setLow = (filter: 'low') => {
+        props.setFilter(filter)
         // need to fix
     }
 
@@ -42,28 +46,28 @@ function Affairs(props: AffairsPropsType) {
             <div className={s.buttonContainer}>
                 <button
                     id={'hw2-button-all'}
-                    onClick={setAll}
+                    onClick={()=>setAll('all')}
                     className={cnAll}
                 >
                     All
                 </button>
                 <button
                     id={'hw2-button-high'}
-                    onClick={setHigh}
+                    onClick={()=>setHigh('high')}
                     className={cnHigh}
                 >
                     High
                 </button>
                 <button
                     id={'hw2-button-middle'}
-                    onClick={setMiddle}
+                    onClick={()=>setMiddle('middle')}
                     className={cnMiddle}
                 >
                     Middle
                 </button>
                 <button
                     id={'hw2-button-low'}
-                    onClick={setLow}
+                    onClick={()=>setLow('low')}
                     className={cnLow}
                 >
                     Low
