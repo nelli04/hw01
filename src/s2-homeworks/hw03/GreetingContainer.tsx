@@ -8,11 +8,12 @@ type GreetingContainerPropsType = {
 }
 
 export const pureAddUser = (name: string, setError: (error: string) => void, setName: (name: string) => void, addUserCallback: (value: string) => void) => {
-    if (name === '') {
-         setError('Ошибка! Введите имя!')
-    } else {
+    if (name.trim() !== '') {
+         setName('')
         addUserCallback(name)
-        setError('')
+    } else {
+
+        setError('Ошибка! Введите имя!')
     }
 
       //Call of Silence - Hiroyuki Sawano
@@ -21,7 +22,7 @@ export const pureAddUser = (name: string, setError: (error: string) => void, set
 }
 
 export const pureOnBlur = (name: string, setError: (value: string) => void) => {
-    if (name.trim() === '') {
+    if (name.trim() == '') {
         setError('Ошибка! Введите имя!')
     } else {
         setError('')
