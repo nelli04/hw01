@@ -12,7 +12,7 @@ export const pureAddUser = (name: string,
                             setName: (name: string) => void,
                             addUserCallback: (value: string) => void) => {
     if (!name || name.trim() == '') {
-       return setError('Ошибка! Введите имя!')
+        return setError('Ошибка! Введите имя!')
     } else {
         setName('')
         addUserCallback(name)
@@ -24,9 +24,7 @@ export const pureAddUser = (name: string,
 export const pureOnBlur = (name: string, setError: (value: string) => void) => {
     if (!name.trim()) {
         setError('Ошибка! Введите имя!')
-    } /*else {
-        setError('')
-    }*/
+    }
     // если имя пустое - показать ошибку
 }
 
