@@ -12,11 +12,10 @@ export const pureAddUser = (name: string, setError: (error: string) => void, set
          setName('')
          addUserCallback(name)
     } else {
-
         setError('Ошибка! Введите имя!')
     }
 
-      //Call of Silence - Hiroyuki Sawano
+
      //The score - In my blood
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
 }
@@ -24,9 +23,9 @@ export const pureAddUser = (name: string, setError: (error: string) => void, set
 export const pureOnBlur = (name: string, setError: (value: string) => void) => {
     if (name.trim() == '') {
         setError('Ошибка! Введите имя!')
-    } else {
+    } /*else {
         setError('')
-    }
+    }*/
     // если имя пустое - показать ошибку
 }
 
