@@ -1,6 +1,6 @@
 .message {
     display: grid;
-    width: 0;
+    //width: 0;
     height: 0;
     margin-left: 200px;
     border-style: solid;
