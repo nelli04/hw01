@@ -23,7 +23,9 @@ function Pages() {
                     {/*<Route ...*/}
 
                     {/*роуты для /pre-junior, /junior, /junior-plus*/}
-                    <Route path='/pre-junior' element={<PreJunior/>}/>
+                    <Route path='/pre-junior' element={<PreJunior/>}> </Route>
+
+
                     {/*<Route ...*/}
                     <Route path='/junior' element={<Junior/>}/>
                     {/*<Route ...*/}
@@ -31,7 +33,7 @@ function Pages() {
                     {/*<Route ...*/}
 
                     {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
-                    <Route path='/error' element={<Error404/>}/>
+                    <Route path='/*' element={<Error404/>}/>
                     {/*<Route ...*/}
                 </Routes>
             </div>
