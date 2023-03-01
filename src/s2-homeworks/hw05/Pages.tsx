@@ -13,7 +13,7 @@ export const PATH = {
 
 function Pages() {
     return (
-        /*<HashRouter>*/
+
             <div>
                 {/*Routes выбирает первый подходящий роут*/}
                 <Routes>
@@ -37,7 +37,7 @@ function Pages() {
                     {/*<Route ...*/}
                 </Routes>
             </div>
-        /*</HashRouter>*/
+
     )
 }
 
