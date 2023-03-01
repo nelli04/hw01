@@ -18,7 +18,7 @@ function Pages() {
                 {/*Routes выбирает первый подходящий роут*/}
                 <Routes>
                     {/*роутинг будут писать студенты*/}
-                    <Route path='/pre-junior' element={<PreJunior/>}/>
+                    {/*<Route path='/pre-junior' element={<PreJunior/>}/>*/}
                     {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу /pre-junior*/}
                     {/*<Route ...*/}
 
