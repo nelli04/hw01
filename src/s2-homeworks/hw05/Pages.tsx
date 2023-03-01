@@ -1,5 +1,5 @@
 import React from 'react'
-import {Routes, Route, Navigate, HashRouter} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import Error404 from './pages/Error404'
 import PreJunior from './pages/PreJunior'
 import Junior from './pages/Junior'
@@ -31,6 +31,7 @@ function Pages() {
                     {/*<Route ...*/}
 
                     {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
+                    <Route path='/error' element={<Error404/>}/>
                     {/*<Route ...*/}
                 </Routes>
             </div>
