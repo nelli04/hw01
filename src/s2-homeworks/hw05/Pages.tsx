@@ -23,7 +23,7 @@ function Pages() {
                     {/*<Route ...*/}
 
                     {/*роуты для /pre-junior, /junior, /junior-plus*/}
-                    <Route path='/pre-junior' element={<PreJunior/>}> </Route>
+                    <Route path='/pre-junior' element={<PreJunior/>}/>
 
 
                     {/*<Route ...*/}
